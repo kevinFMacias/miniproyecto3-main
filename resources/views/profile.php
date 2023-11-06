@@ -24,15 +24,18 @@ $user = $result->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../../assets/devchallenges.png">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Profile | App de Autenticación</title>
+
+    <!-- Google Font -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="icon" href="../../assets/devchallenges.png">
-    <link rel="stylesheet" href="../css/profile.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <title>Profile | App de Autenticación</title>
 </head>
 
 <body>
@@ -93,7 +96,6 @@ $user = $result->fetch_assoc();
                         <h2 class="profile-title">Profile</h2>
                         <p class="profile-content">Some info may be visible to other people</p>
                     </div>
-
                     <div class="button-container">
                         <a href="editprofile.php"><button class="profile-button"
                                 style="cursor: pointer;">Edit</button></a>
@@ -111,8 +113,6 @@ $user = $result->fetch_assoc();
                             style="border-radius: 8px;" />
                         <?php } ?>
                     </div>
-
-
 
                     <div class=" list-item list-name">
                         <span class="item-title">NAME</span>
@@ -146,7 +146,6 @@ $user = $result->fetch_assoc();
                 <p>created by <span class="name">Kevin Macias</span></p>
                 <p>devchallenges.io</p>
             </footer>
-
         </div>
     </div>
     <script src="../javascript/menu.js"></script>

@@ -17,21 +17,22 @@
 
 <body>
     <div id="container" class="container">
-        <div class="app-container">
-            <div class="logo-container">
-                <img id="dev-image" src="../../assets/devchallenges.svg" alt="devchangenges-logo" class="dev-logo">
+        <div class="margin">
+            <div class="app-container">
+                <div class="logo-container">
+                    <img id="dev-image" src="../../assets/devchallenges.svg" alt="devchangenges-logo" class="dev-logo">
 
-                <div>
-                    <button class="dark-button"><i id="mode_icon" class="fa-solid fa-moon moon-icon"></i></button>
+                    <div>
+                        <button class="dark-button"><i id="mode_icon" class="fa-solid fa-moon moon-icon"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="title">
+                <div class="title">
 
-                <h2>Login</h2>
-            </div>
+                    <h2>Login</h2>
+                </div>
 
-            <form class="index-form" method="post" action="login.php">
-                <?php
+                <form class="index-form" method="post" action="login.php">
+                    <?php
 
                 require_once "../../db/database.php";
 
@@ -68,32 +69,34 @@
                 ?>
 
 
-                <input style="background-color: inherit;" type="email" class="email" placeholder="Email" name="email">
-                <span class="material-symbols-outlined mail" style="color: #828282;">
-                    mail
-                </span>
-                <input style="background-color: inherit;" type="password" class="password" placeholder="Password"
-                    name="password"><span class="material-symbols-outlined lock" style="color: #828282;">
-                    lock
-                </span>
-                <input type="submit" value="Login" class="button" name="login">
-            </form>
+                    <input style="background-color: inherit;" type="email" class="email" placeholder="Email"
+                        name="email">
+                    <span class="material-symbols-outlined mail" style="color: #828282;">
+                        mail
+                    </span>
+                    <input style="background-color: inherit;" type="password" class="password" placeholder="Password"
+                        name="password"><span class="material-symbols-outlined lock" style="color: #828282;">
+                        lock
+                    </span>
+                    <input type="submit" value="Login" class="button" name="login">
+                </form>
 
-            <div class="social-media">
-                <p class="select-media">or continue with these social profile</p>
-                <div class="social-media-icons">
-                    <img src="../../assets/Google.svg" alt="Goolge-logo">
-                    <img src="../../assets/Facebook.svg" alt="Facebook-logo">
-                    <img src="../../assets/Twitter.svg" alt="Twitter-logo">
-                    <img src="../../assets/Gihub.svg" alt="Github-logo">
+                <div class="social-media">
+                    <p class="select-media">or continue with these social profile</p>
+                    <div class="social-media-icons">
+                        <img src="../../assets/Google.svg" alt="Goolge-logo">
+                        <img src="../../assets/Facebook.svg" alt="Facebook-logo">
+                        <img src="../../assets/Twitter.svg" alt="Twitter-logo">
+                        <img src="../../assets/Gihub.svg" alt="Github-logo">
+                    </div>
+                    <p class="member">Don't have an account yet?<a href="../../index.php"> Register</a></p>
                 </div>
-                <p class="member">Don't have an account yet?<a href="../../index.php"> Register</a></p>
             </div>
+            <footer>
+                <p>created by <span class="name">Kevin Macias</span></p>
+                <p>devchallenges.io</p>
+            </footer>
         </div>
-        <footer>
-            <p>created by <span class="name">Kevin Macias</span></p>
-            <p>devchallenges.io</p>
-        </footer>
     </div>
     <script src="../javascript/login.js"></script>
 </body>
